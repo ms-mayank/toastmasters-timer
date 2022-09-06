@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toastmasters Timer</title>
+    <link rel="stylesheet" href="Timer.css" />
+  </head>
+  <body id="bodybg">
+    <img width="70px" class="logo" src="logo.png" alt="" />
+    <div class="container">
+      <div class="timer">
+        <h1 id="timer">10:00</h1>
+      </div>
+      <div class="rule">
+        <h1>Toastmasters Timer</h1>
+        <form action="">
+          <div class="inputcontainer">
+            <div>
+              <label for="greencard">Show Green Card at</label><br />
+              <label for="yellowcard">Show yellow Card at</label><br />
+              <label for="redcard">Show Red Card at</label><br />
+            </div>
+            <div>
+              <!-- minute : seconds<br /> -->
+              <input
+                onClick="this.select();"
+                id="greencardmin"
+                type="text"
+                value="00"
+              />min
+              <label>:</label>
+              <input
+                onClick="this.select();"
+                id="greencardsec"
+                type="text"
+                value="00"
+              />sec<br />
+              <input
+                onClick="this.select();"
+                id="yellowcardmin"
+                type="text"
+                value="00"
+              />min
+              <label>:</label>
+              <input
+                onClick="this.select();"
+                id="yellowcardsec"
+                type="text"
+                value="00"
+              />sec<br />
+              <input
+                onClick="this.select();"
+                id="redcardmin"
+                type="text"
+                value="00"
+              />min
+              <label>:</label>
+              <input
+                onClick="this.select();"
+                id="redcardsec"
+                type="text"
+                value="00"
+              />sec<br />
+            </div>
+          </div>
+          <div class="btnctn">
+            <a href="#" onclick="start()">Start</a>
+            <a href="#" onclick="pause()">Pause</a>
+            <a href="#" onclick="reset()">Reset</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="Timer.js"></script>
+  </body>
+</html>

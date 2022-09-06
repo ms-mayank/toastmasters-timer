@@ -1,0 +1,90 @@
+body {
+  box-sizing: inherit;
+  border-color: silver;
+}
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: 10% auto;
+  border: 20px solid;
+  border-style: outset;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+.container:hover {
+  border-style: inset;
+}
+.logo {
+  position: absolute;
+  top: 5%;
+  padding: 11px;
+}
+.timer {
+  flex: 1;
+  align-self: center;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bolder;
+}
+.rule {
+  text-align: center;
+  margin: 22px;
+  padding: 12px;
+  border: 2px solid grey;
+  border-radius: 15px;
+  box-shadow: -10px 12px 15px -6px silver;
+}
+.inputcontainer {
+  display: flex;
+}
+label,
+input {
+  margin: 12px;
+  font-weight: 600;
+  font-size: 14px;
+}
+input {
+  width: 50px;
+  text-align: center;
+}
+label {
+  display: inline-block;
+  margin: 14px 12px;
+}
+.btnctn {
+  display: flex;
+  justify-content: space-evenly;
+}
+a {
+  color: white;
+  width: 50px;
+  padding: 5px;
+  background-color: purple;
+  text-decoration: none;
+  margin-top: 10px;
+  box-shadow: 4px 4px 6px 1px purple;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    display: block;
+  }
+  body {
+    border: none;
+  }
+  label,
+  input {
+    font-size: 10px;
+  }
+  input {
+    width: 20px;
+  }
+}
+@media screen and (max-width: 990px) {
+  label,
+  input {
+    margin: 0px 5px;
+  }
+  .timer {
+    font-size: 40px;
+  }
+}
